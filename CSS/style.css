@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../IMG/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+img {
+    width: 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+
+.contenedor-generalNuri {
+    height: 10%;
+    align-self: center;
+    padding: 5%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-generalNuri h1 {
+    padding: 2%;
+}
+
+.overlayNuri {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition: 0.8s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#paymentForm{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    border: solid 2px red;
+    width: 100%;
+    align-items: center;
+}
+
+fieldset{
+    border: none;
+    margin: 2%;
+}
+
+
+
+
+
+p:hover{
+    color: red;
+}
+
+label:hover{
+    color: red;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1%;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#submitBtn{
+    width: 100%;
+}
+
+#submitBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+input:hover{
+    background-color: red;
+    border-bottom: solid 1px white;
+}
+
+
+
+
+#close{
+    z-index: 1;
+    width: 2%;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-bottom: solid 1px white;
+    visibility: hidden;
+}

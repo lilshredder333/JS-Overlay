@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMG/favicon.png" type="image/x-icon">
+    <title>Capa Superpuesta Nuri</title>
+</head>
+
+<body>
+    <div class="overlayNuri">
+        <form id="paymentNuri" onsubmit="datosPagoNuri(event)">
+            <p>Choose your payment method:</p>
+
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="debit">Debit</option>
+                <option value="credit">Credit</option>
+            </select><br>
+
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Nuri"><br>
+
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Nogales"><br>
+
+            <label for="CardNum">Card Num:</label><br>
+            <input type="text" id="CardNum" name="CardNum" placeholder="123456789"><br>
+
+            <input id="submitBtn" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <img src="IMG/creditCard.png" alt="Credit Card Icon Nuri" onclick="dropdownCompra()">
+    <button id="close" onclick="dropdownCompra()">X</button>
+
+    <div class="contenedor-generalNuri">
+        <h1>COMPRA YA TU MOTO</h1>
+        <h2>Haz click en la tarjeta para introducir tus datos bancarios</h2>
+    </div>
+
+    <p id="resultadoCompra"></p>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
